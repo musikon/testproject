@@ -12,8 +12,7 @@
     "start": "node ./server.js",
     "dev": "better-npm-run start-dev",
     "build": "better-npm-run build-staging",
-    "build-html": "webpack --config webpack/html.config.js",
-    "lint": "eslint ./src --quiet"
+    "build-html": "webpack --config webpack/html.config.js"
   },
   "betterScripts": {
     "build-staging": {
@@ -71,6 +70,7 @@
     "react-hot-loader": "3.0.0-beta.6",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
+    "react-slick": "^0.14.5",
     "react-tap-event-plugin": "^2.0.0",
     "react-transform-hmr": "^1.0.4",
     "redux": "^3.5.2",
@@ -91,10 +91,5 @@
     "webpack-hot-middleware": "^2.9.1",
     "webpack-manifest-plugin": "^1.0.1",
     "webpack-vendor-chunk-plugin": "^1.0.0"
-  },
-  "config": {
-    "ghooks": {
-      "pre-commit": "eslint ./src --quiet"
-    }
   }
 }
